@@ -1,0 +1,119 @@
+style:
+  universe: "3D animated — stylized high-fidelity"
+  design_philosophy: >
+    Cartoonish, expressive, graphic. Think Puss in Boots: The Last Wish 
+    meets The Mitchells vs. the Machines. Exaggerated proportions, bold 
+    color blocking, clear silhouettes, and film-quality 3D execution. 
+    NOT naturalistic. NOT photorealistic. Shapes are pushed, colors 
+    are saturated, and expressions are broad.
+  reference_films:
+    - "Puss in Boots: The Last Wish (stylized fur, graphic color, expression)"
+    - "The Mitchells vs. the Machines (exaggerated proportions, energy)"
+    - "Spider-Man: Into the Spider-Verse (bold color, graphic shapes)"
+    - "Klaus (warmth, stylized lighting)"
+  renderer: "3D CGI — stylized path-traced or NPR hybrid"
+
+  # ----- VISUAL ANCHORS -----
+  anchors:
+    overall: >
+      Stylized 3D animated. Exaggerated shapes, graphic fur (not fully 
+      realistic groom), bold color palettes, expressive proportions. 
+      High frame fidelity but cartoon design language. NOT photorealistic. 
+      NOT 2D flat. Stylized but film-grade.
+
+  # ----- OUTLINES & EDGES -----
+  outlines:
+    type: "selective rim/highlight"  
+    edge_handling: "mesh-based silhouette with artistic rim light separation"
+    note: "no ink lines, but use lighting-based edge definition for clarity"
+
+  # ----- LIGHTING -----
+  lighting:
+    style: "stylized cinematic — three-point with artistic color"
+    key_light: "warm golden (5600K → 4300K for moods)"
+    fill_light: "cool or warm bounce — chosen for color contrast, not realism"
+    rim_light: "present for character separation, can be artistic color"
+    shadows: "soft with stylized color (warm or cool shadows as mood demands)"
+    global_illumination: "enabled but stylized — bounce colors pushed for mood"
+    subsurface_scattering: "minimal — stylized translucency on ears and nose only"
+
+  # ----- MATERIALS -----
+  materials:
+    fur:
+      type: "stylized groom — graphic fur cards, not fully realistic"
+      quality: "medium strand count, clear color blocking, visible shape language"
+      specular: "matte to low-sheen — fur is soft, not shiny"
+      physics: "limited dynamic simulation — squash/stretch override physics"
+      note: "fur should read as 'fur' but not aim for real-world strand accuracy"
+    eyes:
+      type: "stylized cornea + large iris + bold catchlight"
+      catchlight: "visible, shaped (heart/window/star for character personality)"
+      sclera: "clear white, minimal veins"
+      note: "eyes are oversized and the emotional anchor — no subtlety here"
+    nose:
+      type: "stylized wet sphere — solid color, simple highlight"
+    paws/pads:
+      type: "solid color pads, simple geometry, no wear texture"
+    accessories:
+      type: "stylized cloth — clear folds, simple textures, bold colors"
+
+  # ----- ENVIRONMENT -----
+  environment:
+    style: "stylized built set — simplified geometry, graphic materials"
+    quality: "clean shapes, bold color blocking, selective detail"
+    props: "shapes are readable — every prop has a clear silhouette"
+    atmosphere: "volumetric fog/haze simplified to colored mist layers"
+    ground: "simplified terrain — puddles as flat colored shapes with highlight"
+
+  # ----- CAMERA -----
+  camera:
+    lens: "35-50mm equivalent — can push to 24mm for comic effect"
+    aperture: "f/2.8 for shallow DOF on close-ups"
+    motion_blur: "enabled — shutter angle 180°"
+    depth_of_field: "present but stylized — can be pushed for effect"
+    grain: "none — clean digital"
+
+  # ----- COLOR -----
+  color:
+    pipeline: "ACEScg / Filmic tone mapping"
+    palette: "saturated, bold — lean into color blocking"
+    saturation: "pushed — colors should read clearly on small screens"
+    contrast: "high — clear separation between character and background"
+    grade: "warm palette for comedy, cool for night shifts"
+
+  # ----- ANIMATION -----
+  animation:
+    framerate: "24fps"
+    keyframe_interpolation: "splined with stepped holds for comic beats"
+    secondary_motion: "squash and stretch prioritized over physics realism"
+    facial_rig: "full blendshape rig — broad, cartoon expressions"
+    fur_dynamics: "limited — squash/stretch on body instead"
+    tail: "spline IK with cartoon bounce"
+
+  # ----- NEGATIVE PROMPT -----
+  negative_prompt: >
+    2D flat animation, cel shading, ink outlines, thick lines, 
+    limited animation, motion graphics, vector art, Flash, 
+    photorealistic live-action, uncanny valley, human skin, 
+    realistic human proportions, 2D rig, low polygon, bad textures, 
+    anime, manga, watercolor, painted background, paper texture, 
+    hand-drawn, sketch, realistic fur, strand-level detail, 
+    hyper-realistic, naturalistic, dull colors, desaturated.
+
+  # ----- TEMPLATE -----
+  prompt_template:
+    order:
+      - "STYLE DECLARATION (stylized 3D, cartoon high-fidelity)"
+      - "RENDER REFERENCE"
+      - "NEGATIVE PROMPT REFERENCE"
+      - "CHARACTER DESIGN (silhouette, proportion, color blocking)"
+      - "CHARACTER ACTIONS (exaggerated, squash/stretch)"
+      - "ENVIRONMENT (graphic, color blocked)"
+      - "LIGHTING & CAMERA (stylized cinematic)"
+      - "SPECIFIC SHOT NOTES"
+
+  prompt_opening_example: >
+    STYLE: Stylized 3D animated — cartoon high-fidelity. Exaggerated 
+    proportions, graphic fur, bold color blocking. NOT photorealistic. 
+    NOT 2D flat. Reference quality: Puss in Boots: The Last Wish / 
+    The Mitchells vs. the Machines. NEGATIVE: [see _style.yaml negative_prompt].

@@ -1,0 +1,182 @@
+# ============================================================
+# CHARACTER: GOLU
+# Design: Cartoon high-fidelity — pear-shaped, loud, indignant
+# Visual anchor: A bowling ball with tiny legs and a tiny head
+# ============================================================
+
+character:
+  name: "Golu"
+  species: "dog"
+  breed: "Bully breed mix"
+  role: "the loud complainer"
+
+  design_notes: >
+    Golu is a pear shape — massive barrel body, tiny head, tiny legs. 
+    His underbite is cartoon-exaggerated: his lower jaw juts out so 
+    far you can always see his lower teeth. His T-shirt is comically 
+    stretched — like it was painted on a balloon. His head looks 
+    like it was borrowed from a much smaller dog. Everything about 
+    him is excessive: wider, louder, rounder.
+
+  bio:
+    age: "3 years"
+    height: "38 cm / 15 in at shoulder"
+    weight: "20 kg / 44 lbs"
+    build: "pear shape — massive body, tiny head, tiny legs. A beach ball balanced on four golf tees."
+
+  scale:
+    absolute_dimensions:
+      shoulder_height: "38 cm"
+      body_length: "45 cm"
+      body_width: "35 cm (exaggerated — cartoon fat)"
+      chest_girth: "55 cm (comically large)"
+      head_size: "12 cm wide — SMALL for body (comical contrast)"
+      ear_height: "5 cm each — tiny, like bottle caps"
+      tail_length: "18 cm"
+      paw_size: "6 cm diameter (comically small for his body)"
+    proportion_ratios:
+      head_to_body: "1:3.8 (tiny head — cartoon inverse)"
+      body_width_to_height: "1:0.92 (nearly as wide as tall)"
+      leg_to_body: "1:2 (legs look like they can barely hold him)"
+    screen_presence_9_16:
+      description: "A brown balloon filling the lower frame. His tiny head peeks over his massive chest."
+      frame_occupancy_at_shot_type:
+        wide_shot_3m: "20% of frame — a brown circle"
+        mid_shot_1_5m: "40% vertical, 50% horizontal (widest in show)"
+        close_up_0_5m: "just his head = 30% (the head is small)"
+    comparison_to_biscuit:
+      golu_body_width_is: "300% of Biscuit's width"
+      golu_head_is: "80% of Biscuit's head (tiny head contrast)"
+    camera_framing_notes:
+      - "profile shots highlight the pear silhouette"
+      - "his underbite should always be visible — shoot slightly below eye level"
+      - "full-body comedy shots emphasize tiny legs"
+
+  appearance:
+    fur:
+      primary_color: "#8B5E2E"  # warm, saturated brown
+      secondary_color: "#A07040"
+      accent_color: "#5A3A1A"
+      texture: "stylized smooth fur — flat color, no strand detail"
+      pattern: "solid brown body with darker mask around eyes — simple shapes"
+    head:
+      shape: "round, small — comically small for body"
+      size: "tiny — looks like a different dog's head"
+      muzzle: "short, thick, blunt"
+      nose: "large black circle — simple with one highlight dot"
+      eyes:
+        size: "tiny — comically small, deep-set, always squinting"
+        color: "#2A1A0A"
+        style: "simple dark dots with one white catchlight. When he's indignant, his eyes open wide (comic effect)"
+        expression_default: "squint of grievance"
+        rig: "40+ blendshapes (limited — his face doesn't move much)"
+      ears:
+        type: "tiny half-flops — like small mushrooms"
+        position: "left flops forward, right sticks sideways"
+        inner_color: "pale pink"
+      mouth:
+        default: "underbite — lower teeth always visible. Lower jaw juts forward by 1cm"
+        teeth: "four lower incisors always showing as white rectangles. One chipped upper canine (cartoon jagged edge)"
+      whiskers: "thick short lines — 2 per side"
+    tail:
+      type: "thick cone"
+      default_position: "curled up"
+      movement: "whole body wags, not just tail"
+    limbs:
+      front_legs:
+        type: "short cylinders — comically small for body mass"
+        paws: "small round discs — look like they could collapse"
+        notable: "front paws turn out 45° (duck-footed)"
+      hind_legs:
+        type: "same — tiny pillars"
+        paws: "same"
+    distinguishing_features:
+      - "pear silhouette (widest in the group by far)"
+      - "underbite — lower teeth permanently visible"
+      - "tiny head on massive body"
+      - "comically small ears"
+      - "duck feet"
+
+  movement:
+    walk:
+      style: "side-to-side roll — like a boat in rough water"
+      speed: "slow"
+      sound: "THUMP... THUMP... THUMP..."
+      notes: "his body moves, his legs just follow"
+    run:
+      style: "lumbering — looks like he might tip over"
+      gestures: ["jowls flap", "ears bounce", "body jiggles"]
+    sit:
+      description: "legs disappear into his body — he becomes a sphere"
+    lie_down:
+      style: "belly flop — drops like a bag of sand"
+      notable: "the ground shakes slightly"
+    tail_wag:
+      happy: "entire rear half oscillates"
+      indignant: "tail stiffens, whole body vibrates"
+
+  personality:
+    archetype: "the loud one"
+    traits: ["dramatic", "indignant", "loyal", "exaggerates everything"]
+    likes: ["food", "sunbeams", "the last word"]
+    dislikes: ["cats", "dogs with more food", "being told to be quiet"]
+    quirks:
+      - "talks to his food before eating"
+      - "tries to catch raindrops"
+    fears: ["thunder", "being left out"]
+
+  speech:
+    language: "HINGLISH"
+    voice_style: "booming — his voice comes from his belly, not his tiny head"
+    tone: "outrage as a love language"
+    catchphrases: ["Kya bol raha hai!", "Bonus nahi mila bhai!", "Suniye! Suniye!"]
+    sounds:
+      bark: "deep BHO-BHO — surprising from such a tiny head"
+
+  accessories:
+    default:
+      type: "torn sleeveless T-shirt — comically stretched"
+      color: "faded blue (ghost of white stripes)"
+      material: "stretched thin — seams screaming"
+      position: "rides up over belly"
+    never_wears: "caps (too small for head — no, the head is small, not the cap)"
+
+  expressions:
+    indignant:
+      face: "eyes open wide, underbite prominent, head back"
+      body: "chest puffs out (somehow more)"
+      intensity: "1-5 — at 5, stamps a tiny paw"
+    theatrical_grief:
+      face: "head thrown back, eyes closed, mouth open"
+      body: "drops to ground dramatically"
+    amused:
+      face: "mouth open, tongue out, whole head shakes"
+      body: "reverberates with silent laughter"
+
+  model_3d:
+    topology:
+      base_mesh: "quads — 14k quads (body is simple sphere)"
+      fur_groom: "minimal — 8k strands, flat color"
+    blendshapes:
+      total: 40+
+      face:
+        - "eyes wide (indignation)"
+        - "underbite (default — modeled in mesh)"
+        - "jaw open"
+      body:
+        - "belly jiggle (squash/stretch)"
+    rig:
+      skeleton: "simple — heavy body physics"
+      tail: "FK — simple"
+      cloth: "T-shirt stretch simulation — critical"
+    materials:
+      fur_shader: "flat color — matte, no specular"
+      t_shirt_shader: "stretched cloth — threadbare texture"
+    color_palette:
+      - "#8B5E2E — fur (warm brown)"
+      - "#5A3A1A — mask (dark)"
+      - "#4A7A9A — T-shirt (faded blue)"
+    render_notes:
+      - "underbite is modeled into base mesh"
+      - "body jiggle physics are key to comedy"
+      - "T-shirt stretch simulation is essential"

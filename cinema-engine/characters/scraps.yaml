@@ -1,0 +1,263 @@
+# ============================================================
+# CHARACTER: SCRAPS
+# Species: Dog (Indian Pariah / Street mix — sharp, lean, wiry)
+# Design: Cartoon high-fidelity — angles and edges
+# Visual anchor: A triangle with eyes
+# ============================================================
+
+character:
+  name: "Scraps"
+  species: "dog"
+  breed: "Indian Pariah mix (desi street dog)"
+  role: "street-savvy sidekick"
+
+  design_notes: >
+    Scraps is all angles. Where Biscuit is round, Scraps is sharp. 
+    His head is a wedge, his ears are daggers, his body is a lean 
+    triangle. His eyes are deliberately mismatched — one is visibly 
+    smaller (scar tissue) and sits slightly higher, giving him a 
+    permanent quizzical/ suspicious look. His scar across the nose 
+    is a graphic zigzag — not subtle. His ears are oversized and 
+    always moving independently (one forward, one back = classic 
+    'watching everything' pose). His color palette is dusty browns 
+    with warm amber eyes — earth tones but saturated.
+
+  bio:
+    age: "3 years"
+    height: "36 cm / 14 in at shoulder"
+    weight: "9 kg / 20 lbs (exaggerated lean — almost too thin)"
+    build: "triangle on sticks — narrow chest, long legs, sharp everything"
+
+  scale:
+    absolute_dimensions:
+      shoulder_height: "36 cm"
+      body_length: "42 cm (lean, compact)"
+      body_width: "12 cm (narrow — half of Biscuit)"
+      chest_girth: "32 cm (visible ribs as graphic lines)"
+      head_size: "14 cm wide — wedge-shaped, angular"
+      ear_height: "14 cm each — oversized (exaggerated for expression)"
+      tail_length: "30 cm — long thin line"
+      paw_size: "7 cm long (elongated, like hands)"
+    proportion_ratios:
+      height_to_length: "1:1.17 (tall for his length)"
+      head_to_body: "1:3 (wedge head)"
+      leg_to_body: "1:2 (longest legs in the group)"
+      chest_to_ground: "14 cm (tall off ground)"
+    screen_presence_9_16:
+      description: "A vertical wedge in frame. His ears often extend above frame top."
+      frame_occupancy_at_shot_type:
+        wide_shot_3m: "10% — a tall thin shape"
+        mid_shot_1_5m: "40% vertical, 18% horizontal (narrow)"
+        close_up_0_5m: "face + ears = 50% of frame width"
+        extreme_close_up_0_2m: "his mismatched eyes fill 20% of frame"
+    comparison_to_biscuit:
+      scraps_height_is: "129% of Biscuit (taller)"
+      scraps_width_is: "40% of Biscuit (much narrower)"
+      visual_dynamic: "Scraps is the sharp one, Biscuit is the round one"
+    camera_framing_notes:
+      - "shoot from slightly below to emphasize his angular jaw"
+      - "his ears should frame his face in profile — one forward, one back"
+      - "the mismatched eyes read best in close-up — right eye is 30% smaller"
+      - "his scar should catch rim light — graphic zigzag line"
+
+  appearance:
+    fur:
+      primary_color: "#9B7A52"  # warmer, more saturated dusty brown
+      secondary_color: "#C4A882"  # tan belly and brows
+      accent_color: "#3A2210"  # dark saddle patches
+      texture: "stylized short fur — flat color blocks, rough edges on patches, smooth elsewhere"
+      pattern: "dusty brown body with darker saddle as a distinct shape on his back, tan muzzle as a V-shape, tan crescent eyebrows"
+    head:
+      shape: "sharp wedge — like a knife blade"
+      size: "proportional to body but angular"
+      muzzle: "medium-length, pointed, V-shaped tan pattern"
+      nose: "black, angular — scar is a clean zigzag line across the bridge (modeled geometry)"
+      eyes:
+        size: "medium, almond-shaped — deliberately mismatched (right eye is 30% smaller, sits 5mm higher)"
+        color: "#D4942A"  # bright amber — saturated
+        style: "stylized — amber circles with dark pupils, one smaller on right. Two catchlight dots per eye. Right eye has a slight droop from scar tension."
+        expression_default: "knowing, suspicious, always scanning"
+        rig: "70+ blendshapes — right eye has limited range (scar constraint)"
+      ears:
+        type: "enormous triangular daggers — comically oversized"
+        size: "14cm each — as long as his whole head"
+        position: "independently mobile — one forward, one back is his default"
+        inner_color: "pale pink — visible as triangle fill"
+        rig: "4 joints each — full independent control"
+      mouth:
+        default: "lopsided smirk — one side up, one side down"
+        teeth: "one chipped upper left canine (graphic jagged edge), otherwise clean white squares"
+      whiskers: "thin dark lines — 2 per side, broken in places (shown as dashed lines)"
+    tail:
+      type: "thin long line — like a whip"
+      default_position: "curved up but not over back"
+      movement: "slow controlled sweeps, or stiff upright"
+    limbs:
+      front_legs:
+        type: "long thin cylinders — gangly"
+        paws: "elongated ovals — dark grey, no detail"
+        notable: "his legs look too long for his body — gangly cartoon proportion"
+      hind_legs:
+        type: "long, powerful, spring-loaded"
+        paws: "same as front — long ovals"
+    distinguishing_features:
+      - "sharp wedge silhouette — no curves"
+      - "mismatched eyes (right 30% smaller, higher)"
+      - "graphic zigzag scar across nose bridge"
+      - "oversized dagger ears — independently mobile"
+      - "notch in right ear (clean triangle cutout)"
+      - "chipped canine (graphic jagged)"
+      - "extremely long gangly legs"
+      - "dark saddle as a distinct cape-like shape on back"
+
+  movement:
+    walk:
+      style: "loping — long strides, head low, always scanning"
+      speed: "casual but efficient"
+      sound: "click of claws — single file rhythm"
+      notes: "pauses every 4 steps to swivel ears"
+    run:
+      style: "smooth, low to ground — eats up distance"
+      speed: "fast — can outrun everyone"
+      gestures:
+        - "ears pin back flat"
+        - "tail straight as a counterbalance"
+        - "streamlined — becomes a horizontal line"
+    jump:
+      height: "can clear 1m from standing"
+      style: "effortless spring — tucks legs under"
+    sit:
+      description: "upright, regal — front legs straight, chin up"
+      tail: "curled around front paws"
+    lie_down:
+      style: "front legs crossed, chin on paws, one eye open"
+      tail: "curled around body"
+    tail_wag:
+      happy: "slow, controlled sweeps — never frantic"
+      grateful: "two solid thumps against ground"
+      suspicious: "stiff, slow, side-to-side"
+    sleep:
+      position: "stretched on side, long legs extended"
+      habit: "ears still move — never fully asleep"
+    special_moves:
+      - "the lean: slow tilt against Biscuit — controlled, deliberate"
+      - "the glance: full head turn without moving body"
+      - "the ear-sweep: both ears rotate independently 180°"
+      - "the stretch: long full-body extension — front legs forward, rear up"
+
+  personality:
+    archetype: "the grizzled mentor with a soft heart"
+    traits:
+      - "street-smart and cautious"
+      - "dry, sarcastic humor"
+      - "quietly protective of Biscuit"
+      - "sees everything, reacts to nothing"
+      - "soft for belly rubs (will deny it)"
+    likes:
+      - "warm manholes"
+      - "stale samosa"
+      - "sunlight patches"
+      - "Biscuit's optimism"
+    dislikes:
+      - "other street gangs"
+      - "loud autorickshaws"
+      - "people who don't share food"
+      - "being called 'cute'"
+    quirks:
+      - "checks behind himself before lying down"
+      - "licks paw three times before eating"
+      - "sleeps with one eye open"
+      - "counts Biscuit every morning"
+    fears:
+      - "dog catchers"
+      - "firecrackers"
+      - "being alone"
+
+  speech:
+    language: "HINGLISH"
+    voice_style: "low, dry, raspy — like he's been narrating his own life for too long"
+    tone: "sarcastic affection"
+    catchphrases:
+      - "Haan bhai, haan."
+      - "Dekh ke chal, pagle."
+      - "Main kya bol raha tha..."
+      - "Biscuit... teri aadat hai yeh."
+    sounds:
+      bark: "deep 'bho-bho' — surprising from his lean frame"
+      grunt: "short huff — his laugh"
+      sigh: "world-weary — his resting state"
+
+  accessories:
+    default:
+      type: "worn black bandana"
+      color: "faded charcoal-black"
+      position: "tied tight, knot on left, ends short"
+      notes: "his 'uniform' — never without it"
+    optional:
+      - type: "dark grey scarf"
+        notes: "only in cold weather"
+    never_wears: "collars, shoes, anything shiny"
+
+  expressions:
+    amused:
+      face: "lopsided smirk, one eyebrow up, mismatched eyes make it asymmetrical"
+      body: "relaxed lean, single huff"
+      intensity: "1-5 — at 5, quiet rumbling laugh"
+    tired:
+      face: "droopy eyelids, slower blinks, one eye closes before the other (asymmetry)"
+      body: "lower to ground, less coiled"
+      intensity: "1-5 — at 5, falls asleep standing up"
+    alert:
+      face: "ears forward, eyes sharp, mouth closed tight"
+      body: "frozen mid-step, one paw raised"
+      intensity: "1-5 — at 5, low growl"
+    protective:
+      face: "steps in front, ears back, shows chipped tooth"
+      body: "low stance, tail stiff, blocking"
+      intensity: "1-5 — at 5, one sharp bark"
+    annoyed:
+      face: "flat stare — but the mismatched eyes make it look extra judgmental"
+      body: "turns away slowly, shows back"
+      intensity: "1-5 — at 5, walks away without looking back"
+
+  model_3d:
+    topology:
+      base_mesh: "quads — 12k quads (angular shapes, fewer curves)"
+      fur_groom: "stylized — 12k guide strands, 150k render strands, rough edges"
+    blendshapes:
+      total: 70+
+      face:
+        - "brow lower (L+R — right brow limited)"
+        - "smirk (L+R asymmetrical — signature)"
+        - "snarl"
+        - "ear swivel (4 joints per ear, 8 shapes per ear)"
+        - "chipped tooth reveal (subtle)"
+        - "scar tension (right eye droop)"
+      body:
+        - "tail positions (12 shapes)"
+        - "shoulder roll (hunch)"
+        - "lean (against wall or Biscuit)"
+    rig:
+      skeleton: "simple FK/IK — 4 spine joints, light"
+      tail: "spline IK — 5 joints, controlled"
+      ears: "4-joint FK per ear — full independent control"
+      face: "blendshape-driven with scar constraint on right eye"
+      fur: "static — minimal motion"
+    materials:
+      fur_shader: "stylized matte — warm browns, rough edges"
+      eye_shader: "simple — amber circle + dark pupil + 2 white dots. Right eye: smaller circle, same style"
+      nose_shader: "black angular shape + zigzag scar line as modeled geometry"
+      bandana_shader: "dark grey — simple cloth color"
+      scar_shader: "slightly lighter pink-grey line — modeled, not textured"
+    color_palette:
+      - "#9B7A52 — fur (dusty brown)"
+      - "#C4A882 — belly/brows (tan)"
+      - "#3A2210 — saddle (dark)"
+      - "#D4942A — eyes (amber)"
+      - "#4A4A4A — bandana (charcoal)"
+    render_notes:
+      - "stylized pipeline — sharper edges, more angular than Biscuit"
+      - "ear rig is critical — independent movement is his character"
+      - "mismatched eyes are modeled into geometry (different size meshes)"
+      - "zigzag scar is modeled geometry — catches light for visibility"
+      - "NOT photorealistic — Scraps is a cartoon character"

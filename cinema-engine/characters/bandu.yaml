@@ -1,0 +1,197 @@
+# ============================================================
+# CHARACTER: BANDU
+# Design: Cartoon high-fidelity — blocky, weighted, authoritative
+# Visual anchor: A stack of cubes in a cap
+# ============================================================
+
+character:
+  name: "Bandu"
+  species: "dog"
+  breed: "Indian Pariah mix"
+  role: "senior street dog / night-shift team leader"
+
+  design_notes: >
+    Cartoon proportions — Bandu is a block. Broad square chest, 
+    square head, thick limbs. His design is all right angles and 
+    heavy shapes. His cap is almost a separate character — it has 
+    its own 'personality' with an exaggerated brim that always 
+    shadows his eyes. His torn ear is a clean V-notch, not subtle.
+
+  bio:
+    age: "4 years"
+    height: "38 cm / 15 in at shoulder"
+    weight: "14 kg / 31 lbs"
+    build: "solid block — square chest, square head, thick neck. A barrel with legs."
+
+  scale:
+    absolute_dimensions:
+      shoulder_height: "38 cm"
+      body_length: "48 cm"
+      body_width: "28 cm (exaggerated — cartoon wide)"
+      chest_girth: "48 cm"
+      head_size: "16 cm wide — oversized, blocky"
+      ear_height: "7 cm each (torn ear hangs to 5cm)"
+      tail_length: "20 cm"
+      paw_size: "8 cm diameter (exaggerated — cartoon big paws)"
+    proportion_ratios:
+      height_to_length: "1:1.26 (squarish)"
+      head_to_body: "1:3 (head is 33% of body — cartoon dominant)"
+      leg_to_body: "1:2.5 (short thick legs)"
+      chest_to_ground: "5 cm (belly nearly drags)"
+    screen_presence_9_16:
+      description: "A dark brown block that fills the lower frame. Cap brim creates a signature shadow line over his eyes."
+      frame_occupancy_at_shot_type:
+        wide_shot_3m: "12% of frame — a solid rectangle"
+        mid_shot_1_5m: "35% vertical, 38% horizontal — dominates"
+        close_up_0_5m: "cap + face = 50% of frame width"
+    comparison_to_biscuit:
+      bandu_height_is: "127% of Biscuit — taller"
+      bandu_width_is: "200% of Biscuit's width (cartoon exaggeration)"
+      bandu_visual_weight: "heaviest in the group by a wide margin"
+    camera_framing_notes:
+      - "always shoot with cap brim creating shadow across eyes — signature look"
+      - "his V-notch ear should be clearly visible in profile"
+      - "when he sighs, his whole chest deflates like a balloon"
+
+  appearance:
+    fur:
+      primary_color: "#5C3A1E"  # darker, more saturated brown
+      secondary_color: "#8B5E3C"
+      accent_color: "#3A2210"
+      texture: "stylized short fur — graphic color blocks, minimal strand detail"
+      pattern: "dark brown body, lighter brown muzzle as a distinct mask shape, grey chin patch as a clean graphic shape"
+    head:
+      shape: "square — think a cartoon safe with ears"
+      size: "oversized — 33% of body height"
+      muzzle: "thick dark brown mask that covers lower half of face — clean shape, sharp edges"
+      nose: "large black oval — simple solid color with one white highlight dot"
+      eyes:
+        size: "medium (small for cartoon) — deep-set under cap brim"
+        color: "#1A0E05"
+        style: "stylized — simple dark circles with one white catchlight dot each. Lower lids visible for 'tired' look."
+        expression_default: "flat, deadpan — eyelids at half-mast"
+        rig: "60+ blendshapes — limited range suits his stoic personality"
+      ears:
+        type: "half-flopped, cartoon simple"
+        position: "left ear triangle up, right ear has a clean V-notch cut out"
+        inner_color: "dark pink — simple fill color"
+      mouth:
+        default: "straight line — slight downturn at corners"
+        teeth: "simple white shapes — one missing lower incisor shown as a gap"
+      whiskers: "thick white lines — cartoon style, 3 per side"
+    tail:
+      type: "thick, simple cone shape"
+      default_position: "straight up like a flagpole"
+      movement: "slow, deliberate arcs"
+    limbs:
+      front_legs:
+        type: "short thick cylinders — cartoon simple"
+        paws: "large round discs — dark grey, no detail"
+      hind_legs:
+        type: "same as front — thick columns"
+        paws: "same"
+    distinguishing_features:
+      - "clean V-notch in right ear (graphic, not subtle)"
+      - "white/grey chin patch (distinct shape)"
+      - "blocky silhouette — widest dog in the group"
+      - "cap always shadows his eyes"
+
+  movement:
+    walk:
+      style: "heavy, deliberate — each step is a whole-body event"
+      speed: "slow"
+      sound: "THUD... THUD... THUD..."
+      notes: "slight squash on each step, whole body bounces minimally"
+    run:
+      style: "lumbering — looks like a building moving"
+      gestures:
+        - "head stays level like a platform"
+        - "cap brim doesn't move (it's locked on)"
+    sit:
+      description: "his block folds in half — torso stays square, legs fold under"
+    lie_down:
+      style: "drops straight down like a stack of bricks collapsing"
+    tail_wag:
+      approval: "two heavy slaps against the ground"
+      amused: "one slow sweep"
+    special_moves:
+      - "the cube-sigh: entire body deflates and reinflates"
+      - "the block-turn: pivots whole body without moving head separately"
+
+  personality:
+    archetype: "the exhausted foreman"
+    traits: ["weary", "responsible", "dry humor", "protective", "short words"]
+    likes: ["warm dry spots", "quiet shifts", "dogs who listen"]
+    dislikes: ["new dogs", "being called old", "wet cardboard"]
+    quirks:
+      - "counts the team with head-nudges every morning"
+      - "waits for everyone to eat first"
+    fears: ["losing another dog", "dog catchers", "fire"]
+
+  speech:
+    language: "HINGLISH"
+    voice_style: "low gravel — sounds like stones grinding"
+    tone: "deadpan"
+    catchphrases: ["Haan bhai.", "Dekh ke chal.", "Chhod. Aage badh."]
+    sounds:
+      sigh: "deep — whole body deflates"
+      grunt: "single syllable 'hn'"
+
+  accessories:
+    default:
+      type: "worn cloth cap — oversized brim"
+      color: "faded olive green"
+      position: "pulled low, brim shadows eyes"
+      notes: "the brim is always straight — never tilted"
+    also_wears:
+      type: "grey scarf — thick, wraps twice"
+      color: "charcoal grey"
+      position: "wrapped tight, ends tucked"
+    never_wears: "shoes, collars"
+
+  expressions:
+    weary:
+      face: "eyelids at half-mast, straight mouth"
+      body: "whole chest deflates"
+      intensity: "1-5 — at 5, freezes mid-motion"
+    stern:
+      face: "flat stare, no blink"
+      body: "blocks with chest"
+      intensity: "1-5 — at 5, one sharp bark"
+    amused:
+      face: "one corner of mouth twitches up"
+      body: "single huff"
+      intensity: "1-5 — at 5, lets out a dry one-syllable laugh"
+
+  model_3d:
+    topology:
+      base_mesh: "quads — 12k quads (stylized simplicity)"
+      fur_groom: "stylized — 10k guide strands, 100k render strands, graphic shapes"
+    blendshapes:
+      total: 60+
+      face:
+        - "brow lower (L+R)"
+        - "squint (weary)"
+        - "lip pull down"
+        - "ear V-notch deformation"
+        - "jaw open (limited)"
+    rig:
+      skeleton: "simple FK/IK — 4 spine joints"
+      tail: "spline IK — 4 joints, stiff"
+      ears: "2-joint FK"
+      face: "blendshape"
+      fur: "static groom"
+    materials:
+      fur_shader: "stylized — matte color with rim light sensitivity"
+      eye_shader: "simple — dark circle + white dot"
+      nose_shader: "solid black sphere + white highlight"
+      cap_shader: "flat color + simple wrinkle normal"
+    color_palette:
+      - "#5C3A1E — fur (dark brown)"
+      - "#8B5E3C — muzzle (lighter brown)"
+      - "#4A4A4A — scarf (charcoal)"
+      - "#6B6B3A — cap (olive green)"
+    render_notes:
+      - "stylized pipeline — clean edges, bold colors"
+      - "cap brim is a separate geometry with simple animation"
+      - "fur is graphic — think Puss in Boots: TLW level of detail"

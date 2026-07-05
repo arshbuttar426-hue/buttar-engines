@@ -1,0 +1,186 @@
+# ============================================================
+# CHARACTER: CHIKU
+# Design: Cartoon high-fidelity — tiny, tired, C-shaped
+# Visual anchor: A comma with legs
+# ============================================================
+
+character:
+  name: "Chiku"
+  species: "dog"
+  breed: "Terrier mix"
+  role: "the weary realist"
+
+  design_notes: >
+    Chiku is drawn as a perfect letter C — hunched, compact, 
+    curled inward like he's trying to take up as little space 
+    as possible. His eyes are perpetually at half-mast with 
+    comically large bags underneath. His red scarf is oversized 
+    — it trails behind him like a cape he didn't ask for. 
+    He's the smallest by far, which makes his exhaustion read 
+    as funny rather than sad.
+
+  bio:
+    age: "2.5 years"
+    height: "25 cm / 10 in at shoulder (exaggerated short)"
+    weight: "7 kg / 15 lbs"
+    build: "tiny, compact C-shape — like a croissant that's been left in the oven too long"
+
+  scale:
+    absolute_dimensions:
+      shoulder_height: "25 cm"
+      body_length: "35 cm (C-shape reduces visual length)"
+      body_width: "14 cm (wider than tall proportion)"
+      chest_girth: "28 cm"
+      head_size: "14 cm wide — oversized for body (cartoon big head)"
+      ear_height: "8 cm each — oversized, floppy"
+      tail_length: "15 cm"
+      paw_size: "4 cm (tiny — like dessert spoons)"
+    proportion_ratios:
+      head_to_body: "1:2.5 (head is 40% of body — cartoon dominant)"
+      leg_to_body: "1:2 (shortest legs in the group)"
+      height_to_width: "1:0.56 (wider than tall when hunched)"
+    screen_presence_9_16:
+      description: "A small comma shape in the lower frame. His red scarf is half his visual mass."
+      frame_occupancy_at_shot_type:
+        wide_shot_3m: "5% — almost invisible"
+        mid_shot_1_5m: "18% vertical, 20% horizontal (scarf fills space)"
+        close_up_0_5m: "big head + massive eye bags = 45% of frame"
+    comparison_to_biscuit:
+      chiku_height_is: "83% of Biscuit"
+      chiku_visual_weight: "lightest — needs scarf to have frame presence"
+    camera_framing_notes:
+      - "frame to include his trailing scarf — it's his visual signature"
+      - "profile shots best show his C-shape silhouette"
+      - "close-ups should emphasize his cartoon eye bags"
+
+  appearance:
+    fur:
+      primary_color: "#C8A86A"  # brighter, warmer sandy
+      secondary_color: "#E8D5B0"
+      accent_color: "#A08040"
+      texture: "stylized short fur — smooth, flat color with subtle value change"
+      pattern: "sandy brown body with cream belly — simple shapes"
+    head:
+      shape: "round with soft cheeks — oversized for body"
+      size: "comically large — 40% of body height"
+      muzzle: "short, round, cream colored — simple sphere shape"
+      nose: "small dark brown oval — one highlight dot"
+      eyes:
+        size: "large and round (comical)"
+        color: "#3A2510"
+        style: "stylized — big dark circles with heavy lower eyelid bags (permanent dark half-circles under eyes, drawn like graphic shapes). Catchlight: two dots."
+        expression_default: "half-lidded, bags prominent, 'I haven't slept in years'"
+        rig: "50+ blendshapes"
+      ears:
+        type: "large, floppy, triangular"
+        position: "always drooping forward — too tired to perk up"
+        inner_color: "light pink"
+      mouth:
+        default: "small line, slightly open — tired pant"
+        teeth: "one visible buck tooth (cartoon addition)"
+      whiskers: "thin lines — 2 per side, drooping down"
+    tail:
+      type: "thin line — simple"
+      default_position: "dragging on ground"
+      movement: "minimal"
+    limbs:
+      front_legs:
+        type: "tiny cylinders — comically short"
+        paws: "small cream circles"
+        notable: "left front paw is solid white"
+      hind_legs:
+        type: "same — tiny"
+        paws: "same"
+    distinguishing_features:
+      - "C-shape silhouette (permanent hunched spine)"
+      - "cartoon eye bags — graphic dark half-circles under eyes"
+      - "oversized red scarf"
+      - "one white paw"
+      - "one buck tooth"
+
+  movement:
+    walk:
+      style: "shuffling — tiny steps, minimal leg lift"
+      speed: "slow"
+      sound: "shff-shff-shff (scarf dragging)"
+    run:
+      style: "legs move fast, body barely advances"
+      gestures:
+        - "scarf trails behind like a banner"
+        - "ears bounce up and down"
+    sit:
+      description: "legs disappear under his round body — he becomes a ball"
+    lie_down:
+      style: "curls into a perfect circle — nose touches tail"
+    tail_wag:
+      agreement: "two wags, stops"
+      happy: "full body shake instead of tail movement"
+
+  personality:
+    archetype: "too tired to argue"
+    traits: ["perpetually exhausted", "agreeable", "quietly sarcastic", "observant"]
+    likes: ["warm spots", "quiet", "sleep"]
+    dislikes: ["loud noises", "running", "wet paws"]
+    quirks:
+      - "scratches twice behind left ear before lying down"
+      - "holds food in mouth for 5 seconds before eating"
+
+  speech:
+    language: "HINGLISH"
+    voice_style: "thin, reedy — like a tired flute"
+    tone: "monotone agreement"
+    catchphrases: ["Sach bol raha hai yar...", "Haan bhai, haan.", "Chhod na yar."]
+    sounds:
+      sigh: "short nose exhale — 'pff'"
+
+  accessories:
+    default:
+      type: "oversized red scarf"
+      color: "bright crimson (faded to brick at tips)"
+      position: "wrapped once, one end trailing on ground"
+      notes: "the scarf is comically long — always half a meter trailing"
+    never_wears: "caps, collars"
+
+  expressions:
+    tired:
+      face: "eyes half-closed, bags prominent, mouth open slightly"
+      body: "C-shape compresses tighter"
+      intensity: "1-5 — at 5, eyes close mid-sentence"
+    agreeable:
+      face: "slow nod, eyes closed briefly"
+      body: "single forward lean then back"
+    amused:
+      face: "one side of mouth curls up, eyes crinkle"
+      body: "silent shake"
+    annoyed:
+      face: "flat stare, one eyebrow up"
+      body: "turns away with scarf swishing"
+
+  model_3d:
+    topology:
+      base_mesh: "quads — 10k quads (simplest mesh)"
+      fur_groom: "minimal — 5k guide strands, flat color"
+    blendshapes:
+      total: 50+
+      face:
+        - "eye bag deformation (heavy)"
+        - "squint (tired)"
+        - "half-smirk"
+        - "ear droop"
+      body:
+        - "spine curl (C-shape default)"
+    rig:
+      skeleton: "simple — 3 spine joints"
+      tail: "simple FK"
+      scarf: "full cloth simulation — important"
+    materials:
+      fur_shader: "flat color — matte"
+      eye_shader: "simple dark + white dot"
+      scarf_shader: "bright red — simple cloth"
+    color_palette:
+      - "#C8A86A — fur (sandy)"
+      - "#E8D5B0 — belly (cream)"
+      - "#CC2222 — scarf (crimson)"
+    render_notes:
+      - "scarf cloth simulation is critical — it's his defining feature"
+      - "eye bags are modeled geometry, not just texture"

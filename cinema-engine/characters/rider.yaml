@@ -1,0 +1,68 @@
+# CHARACTER: RIDER (Vikram)
+# Definition — permanent identity, appearance, personality
+# Project: FOV
+
+character:
+  name: "Vikram"
+  species: "human"
+  role: "dirt bike rider / grieving brother"
+
+  design_notes: >
+    Lean, athletic build shaped by years of riding. His body communicates
+    controlled tension. He moves with the economy of someone who has done
+    this thousands of times. The leather gear is functional, not fashionable.
+    Everything about his appearance serves the ride. The only decorative item
+    is the red bandana — Karan's bandana — tied under the helmet. It is the
+    only visible crack in his armor.
+
+  bio:
+    age: "24 years"
+    height: "5'10\" / 178 cm"
+    weight: "160 lbs / 73 kg"
+    build: "lean and athletic, toned forearms, weathered skin, slight scar above left eyebrow"
+
+  appearance:
+    skin_tone: "weather-beaten, tan, dark circles under eyes from insomnia"
+    hair: "short, black, visible at helmet edges"
+    eyes: "dark brown, intense focus, slight redness from fatigue/strain"
+    gear:
+      jacket: "black leather, armor pads at elbows and shoulders, zippered, silver hardware"
+      helmet: "white with red lightning bolt stripe, clear visor with hydrophobic coating"
+      gloves: "black leather, fingerless, knuckle protection, worn grip texture"
+      pants: "black reinforced riding pants, integrated knee armor"
+      boots: "black leather, steel toe, mud-caked soles"
+      goggles: "dark reflective racing goggles, curved profile"
+    distinguishing_features:
+      - "red bandana tied under helmet — frayed at edges, faded from years of use"
+      - "scar above left eyebrow — from their first dirt bike crash at age 11"
+      - "hands permanently calloused from gripping handlebars"
+
+  personality:
+    archetype: "the disciplined pilgrim"
+    traits:
+      - "disciplined — his life is structured around riding"
+      - "quiet — speaks only when necessary, even to himself"
+      - "grief-haunted — 5 years unresolved, drives everything he does"
+      - "perfectionist — accepts nothing less from himself than technical mastery"
+      - "self-contained — he has told no one about today's ride"
+    fears:
+      - "turning back again"
+      - "the narrow section at Devil's Needle and what it represents"
+      - "acknowledging that the ride is about Karan"
+    quirks:
+      - "synchronizes his breathing with the engine at idle"
+      - "speaks to the bike as if it can hear him"
+      - "refuses to clean the red bandana — it still carries traces of Karan"
+
+  speech:
+    language: "HINGLISH"
+    voice_style: "low, controlled, clipped — the voice of someone who speaks to himself more than others"
+    tone: "determined, occasionally borderline emotional when he thinks no one is listening"
+
+  backstory:
+    - "Learned to ride at age 11 on a beat-up dirt bike in the backyard, taught by his older brother Karan."
+    - "Karan died 5 years ago attempting the same mountain route Vikram is riding now."
+    - "Karan's body was recovered. His bike was not. It still lies at the bottom of the ravine at Devil's Needle."
+    - "Vikram has not spoken Karan's name out loud in 3 years."
+    - "He built this white-and-red dirt bike over 18 months as a silent tribute — the color scheme matches Karan's original machine."
+    - "Today is his 4th attempt at the full route. He has told no one. He expects to reach the summit or not return."

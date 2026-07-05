@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "id": "6c19b4fc-187f-402b-a33d-7311ff17287d",
+    "name": "ARSHBUTTAR",
+    "version": "1.0.0",
+    "created": "2026-05-15",
+    "last_updated": "2026-05-15",
+    "total_branches": 2
+  },
+  "branches": [
+    {
+      "name": "ARCHEOLOGIST",
+      "path": "NeuroCity_Brain/src/archeologist",
+      "profile": "AIPass Workshop",
+      "description": "New agent - purpose TBD",
+      "email": "@archeologist",
+      "status": "active",
+      "created": "2026-05-15",
+      "last_active": "2026-05-15"
+    },
+    {
+      "name": "ARCHITECT",
+      "path": "src/architect",
+      "profile": "AIPass Workshop",
+      "description": "New agent - purpose TBD",
+      "email": "@architect",
+      "status": "active",
+      "created": "2026-05-15",
+      "last_active": "2026-05-15"
+    }
+  ]
+}

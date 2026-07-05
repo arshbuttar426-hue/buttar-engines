@@ -1,0 +1,127 @@
+# ============================================================
+# UNIVERSAL STYLE REFERENCE — THE RIDER / GAS STATION
+# Photorealistic live-action cinematic (Veo3-optimized)
+# Apply to EVERY generation. Use as negative prompt anchor.
+# ============================================================
+
+style:
+  universe: "photorealistic live-action cinematic"
+  reference_films:
+    - "Nomadland (landscape scale, natural light, solitude)"
+    - "The Rover (desert texture, worn materials, heat haze)"
+    - "Paris, Texas (color palette, gas stations, open road)"
+    - "Hell or High Water (naturalistic lighting, weight of objects)"
+    - "Mad Max: Fury Road (practical stunts, dust, mechanical fidelity — not the fantasy)"
+  renderer: "Veo3 — photorealistic video generation with cinematic lens simulation"
+
+  # ----- VISUAL ANCHORS -----
+  anchors:
+    overall: >
+      Photorealistic live-action. NOT 3D animated. NOT stylized.
+      NOT CGI. Every frame should look like it was shot on location
+      with an Arri Alexa or RED camera, natural light, practical sets,
+      and real dust. The aesthetic is grounded, tactile, and unglamorous.
+      Beauty comes from composition and light, not from stylization.
+
+  # ----- LENS & CAMERA -----
+  camera:
+    lens: "35mm-50mm prime (natural field of view, no wide-angle distortion)"
+    aperture: "f/2.8-f/4 for shallow DOF on close-ups; f/8-f/11 for landscapes"
+    motion_blur: "enabled — shutter angle 180° (24fps), natural blur on movement"
+    depth_of_field: "subtle, optical — not artificial bokeh, not tilt-shift"
+    grain: "very subtle film grain (0.5%) for texture — clean digital is acceptable"
+    lens_flare: "practical, optical — only when shooting into sun, not stylized"
+    chromatic_aberration: "none — clean glass"
+
+  # ----- LIGHTING -----
+  lighting:
+    style: "naturalistic — motivated entirely by practical sources (sun, sky, one fluorescent tube, one streetlamp)"
+    key_light: "desert sun — hard, directional, casting crisp shadows (golden hour warmth or midday bleach)"
+    fill_light: "bounced desert sky — cool blue from the open dome overhead"
+    rim_light: "sun rim where it catches dust on the jacket — not a deliberate setup"
+    shadows: "hard-edged in direct sun, soft under the canopy"
+    practical_sources:
+      - "fluorescent tube inside gas station (buzzing, cool white, low CRI)"
+      - "streetlamp at dusk (warm amber, sodium-vapor, casts a single pool)"
+    color_temperature: "natural — no teal-orange grade, no stylized LUTs"
+
+  # ----- COLOR -----
+  color:
+    pipeline: "natural grade — clean Rec.709 with minimal correction"
+    palette:
+      world: "burnt orange (#CC5500) | desert yellow (#D4A843) | dust brown (#8B7355) | rust red (#8B3A3A) | weathered cream (#F5E6CA)"
+      rider: "matte black (#1A1A1A) | charcoal (#36454F) | steel (#71797E) | dark leather (#3E2723)"
+      accent: "pink (#FF69B4) + yellow (#FFD700) — the sock, the only saturated non-earth color"
+    saturation: "slightly desaturated (80-90%) — dust and heat bleach color"
+    contrast: "natural S-curve — crushed blacks (not crushed), hot highlights that clip naturally (not stylized)"
+    grade: "none — let the desert and dust do the grading"
+
+  # ----- COMPOSITION -----
+  composition:
+    framing: "static, contemplative — the camera stays still or moves very slowly"
+    rule_of_thirds: "obeyed — rider rarely centered, landscape dominates 60-85% of frame"
+    horizon: "usually low (20-30% from bottom) to emphasize sky and buttes"
+    leading_lines: "road center line, telephone poles, canopy edge — use them"
+    negative_space: "85% of frame = empty landscape → 5% rider → 10% gas station"
+    aspect_ratio: "9:16 vertical (YouTube Shorts / Veo3) — plan for this constraint"
+
+  # ----- TEXTURE & MATERIAL -----
+  materials:
+    leather:
+      type: "worn full-grain leather"
+      specular: "low, patchy — areas worn smooth (elbows, knees) catch more light"
+      detail: "crease map, scratch map, embedded dust"
+    denim:
+      type: "heavyweight raw denim"
+      specular: "matte — almost no sheen"
+      detail: "fade lines at knees, whisker creases at hips, oil stains"
+    skin:
+      type: "real human skin — not idealized"
+      detail: "pores, slight sun damage, freckles, subtle expression lines"
+      specular: "natural — slightly oily T-zone, matte cheeks"
+      note: "the rider's face is barely shown — when it is, she looks real, not 'beautiful'"
+    metal:
+      type: "worn steel and aluminum"
+      specular: "medium, dirty — smudged, fingerprinted oil on the pump handle"
+      detail: "scratch map, micro-pitting (sand erosion), heat discoloration near exhaust"
+    glass:
+      type: "practical glass — not perfectly clear"
+      detail: "dust film on the pump display, single crack in the station window"
+    dust:
+      type: "everywhere — embedded in every surface"
+      behavior: "settled, not dramatic — thin uniform layer on horizontal surfaces"
+
+  # ----- NEGATIVE PROMPT (copy into every generation) -----
+  negative_prompt: >
+    3D animation, CGI, stylized, cartoon, cel shading, outlines,
+    flat colors, vector art, video game render, Unreal Engine,
+    Pixar, DreamWorks, anime, watercolor, hand-drawn, sketch,
+    2D, motion graphics, Flash animation, low polygon,
+    photorealistic human with perfect skin, makeup, glamour,
+    model, fashion, Hollywood beauty, dramatic lighting,
+    teal-and-orange grade, stylized color grading, lens flare
+    overlay, film grain overlay, artificial bokeh, tilt-shift,
+    green screen, CGI backgrounds, matte painting,
+    fantasy landscape, surreal colors, sunset cliché,
+    slow motion, drone shot, crane shot, steadicam,
+    handheld camera, Dutch angle, dramatic camera movement
+
+  # ----- TEMPLATE (every Veo3 prompt must follow this order) -----
+  prompt_template:
+    order:
+      - "STYLE DECLARATION (photorealistic live-action — NOT animation)"
+      - "CAMERA (focal length, aperture, movement)"
+      - "LIGHTING (motivated by practical sources)"
+      - "SUBJECT DESCRIPTION (rider or environment, specific detail)"
+      - "ACTION (what happens in the 3-8 second clip)"
+      - "ENVIRONMENT (location, time of day, weather)"
+      - "SOUND (diegetic only)"
+      - "NEGATIVE PROMPT REFERENCE"
+
+  # ----- EXAMPLE FRAGMENT -----
+  prompt_opening_example: >
+    STYLE: Photorealistic live-action. Shot on location with a 35mm prime
+    at f/4. Natural light — hard desert sun, cool sky fill. NOT animation,
+    NOT CGI, NOT stylized. NEGATIVE: [see _style_rider.yaml negative_prompt].
+
+# ============================================================

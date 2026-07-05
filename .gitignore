@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+.DS_Store
+*.swp
+*.swo
+*~
+.env
+*.log
+target/
+*.o
+*.bin
+*.lock
+incremental/
+node_modules/
+.build/
+*.xcodeproj/
+*.xcworkspace/
+# Keep only source, not build artifacts

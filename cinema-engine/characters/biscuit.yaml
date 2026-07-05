@@ -1,0 +1,270 @@
+# ============================================================
+# CHARACTER: BISCUIT
+# Species: Dog (Corgi mix — stubby legs, maximum fluff, maximum eyes)
+# Design: Cartoon high-fidelity — the roundest boy
+# Visual anchor: A golden loaf with satellite-dish ears
+# ============================================================
+
+character:
+  name: "Biscuit"
+  species: "dog"
+  breed: "Corgi mix"
+  role: "playful companion / eternal optimist"
+
+  design_notes: >
+    Biscuit is a perfect oval — his body is a single smooth curve 
+    from nose to tail. His legs are comically short (they barely 
+    reach the ground). His eyes are enormous — 40% of his face width 
+    — and his ears are oversized triangles that act like emotional 
+    semaphores. His fur is a warm golden-tan with a cream belly, 
+    designed as clean color blocks. He's the roundest, softest, 
+    most huggable shape in the cast.
+
+  bio:
+    age: "2 years"
+    height: "28 cm / 11 in at shoulder (exaggerated short — belly drags)"
+    weight: "12 kg / 26 lbs"
+    build: "perfect oval — like a loaf of bread built by a cartoonist. No sharp edges."
+
+  scale:
+    absolute_dimensions:
+      shoulder_height: "28 cm (exaggerated short)"
+      body_length: "50 cm (loaf shape)"
+      body_width: "30 cm (cartoon wide — roundest in the group)"
+      chest_girth: "48 cm (all body, no waist)"
+      head_size: "18 cm wide — MASSIVE for body"
+      ear_height: "12 cm each — oversized triangles"
+      tail_length: "18 cm — fluffy question mark"
+      paw_size: "5 cm — tiny round discs"
+    proportion_ratios:
+      height_to_length: "1:1.8 (extreme long dog)"
+      head_to_body: "1:2.8 (head is enormous — 36% of body)"
+      leg_to_body: "1:3.5 (legs barely exist)"
+      chest_to_ground: "3 cm (belly drags on ground)"
+    screen_presence_9_16:
+      description: "A golden oval in the lower third. Two giant ears frame his face like satellite dishes."
+      frame_occupancy_at_shot_type:
+        wide_shot_3m: "10% — a golden bean"
+        mid_shot_1_5m: "30% vertical, 45% horizontal (fills lower frame)"
+        close_up_0_5m: "face + ears = 60% of frame width (eyes alone = 25%)"
+        extreme_close_up_0_2m: "one eye fills 15% of frame"
+      scale_reference_objects:
+        - "similar in size to a large loaf of bread"
+        - "head is the size of a dinner plate"
+        - "ear is as long as a TV remote"
+        - "paw is the size of a cookie"
+    comparison_to_scraps:
+      biscuit_width_is: "200% of Scraps' width"
+      biscuit_roundness: "Scraps is a triangle, Biscuit is a circle"
+      visual_dynamic: "Biscuit is the round one, Scraps is the sharp one"
+    camera_framing_notes:
+      - "ground-level shots make him look like a golden blob — use it"
+      - "his ears should frame his face in close-ups — comic effect"
+      - "when he looks up, his ears go back — joyful silhouette"
+
+  appearance:
+    fur:
+      primary_color: "#F0C840"  # warm bright golden — more saturated
+      secondary_color: "#FFF5DC"  # cream belly
+      accent_color: "#D4942A"  # copper ears
+      texture: "stylized fluffy fur — soft shapes, no strand realism. Fur reads as overlapping soft triangles and circles."
+      pattern: "golden body, white underbelly as a clean cream shape, white star blaze on forehead, white tail tip"
+    head:
+      shape: "round — a perfect circle"
+      size: "enormous for body — 36% of body length"
+      muzzle: "short, round, cream colored — like a small scoop"
+      nose: "small heart-shaped black — one white highlight dot"
+      eyes:
+        size: "HUGE — 40% of face width each"
+        color: "#4A3020"  # warm dark brown
+        style: "stylized — enormous dark circles with TWO white catchlight dots each (gives him a constant 'shiny' look). Wet layer on cornea as a transparent highlight shape."
+        expression_default: "wide, soft, curious — eyebrows slightly raised"
+        rig: "80+ blendshapes — eyes and brows do most of the work"
+      ears:
+        type: "oversized triangles — like satellite dishes"
+        size: "comically large — 12cm each, as long as his face"
+        position: "perked up at attention (default), relaxed to sides (sleepy), pinned back (excited run)"
+        inner_color: "soft pink — visible as a simple pink triangle inside"
+        rig: "3 joints each — ears are expressive"
+      mouth:
+        default: "soft smile — tiny tongue blep (tip out) is default"
+        teeth: "small white squares — rarely visible"
+      whiskers: "thin white lines — 3 per side, curving out"
+    tail:
+      type: "fluffy plume — like a soft triangle"
+      default_position: "curved over back like a question mark"
+      movement: "wagging that involves the whole rear half"
+    limbs:
+      front_legs:
+        type: "stubby cylinders — comically short"
+        paws: "round cream discs — tiny pink bean shapes on bottom (visible when belly-up)"
+        notable: "when standing, his belly is 3cm from ground"
+      hind_legs:
+        type: "same — stubby, slightly longer"
+        notable: "when lying down, legs splay out like frog legs (cartoon sploot)"
+    distinguishing_features:
+      - "perfect oval silhouette — roundest character in the cast"
+      - "enormous satellite-dish ears"
+      - "huge eyes (40% of face width)"
+      - "white star blaze on forehead (clean star shape)"
+      - "permanent tiny tongue blep"
+      - "right ear tip folded (floppy triangle tip)"
+      - "belly nearly drags on ground"
+
+  movement:
+    walk:
+      style: "waddling — side-to-side, belly swaying"
+      speed: "slow to moderate"
+      sound: "pitter-patter — tiny paws, heavy body"
+      notes: "takes 3 steps per second (comically fast leg motion for slow progress)"
+    run:
+      style: "bouncy gallop — both hind legs push together like a rabbit"
+      speed: "surprisingly fast"
+      gestures:
+        - "ears flap back"
+        - "tongue hangs out side"
+        - "tail streams behind"
+        - "entire body bounces with each stride"
+    jump:
+      height: "low — max 20 cm off ground"
+      style: "pounces forward — lands with a soft 'boing'"
+    sit:
+      description: "hind legs vanish under body — he becomes a perfect dome"
+      tail: "wagging in circles underneath"
+    lie_down:
+      style: "front legs forward, hind legs splayed back (full sploot — both legs straight back like a frog)"
+    tail_wag:
+      happy: "wide arcs — whole rear end shakes"
+      excited: "full body wag — front paws lift off ground"
+      curious: "slow, tentative sweeps"
+    sleep:
+      position: "curled into a donut — nose tucked under tail"
+      twitch: "paws twitch, ears flutter"
+    special_moves:
+      - "the sploot: flat on belly, both hind legs stretched straight back — maximum surface area"
+      - "tippy-taps: rapid alternating paw stamps on spot"
+      - "zoomies: sudden burst of frantic circles"
+      - "head tilt: 45° tilt when confused — ears go in opposite directions"
+
+  personality:
+    archetype: "the golden-hearted goofball"
+    traits:
+      - "eternally optimistic (nothing can change this)"
+      - "easily impressed (a falling leaf is the greatest thing)"
+      - "loyal to a fault"
+      - "slightly dramatic when snacks are involved"
+      - "curious about everything"
+    likes:
+      - "belly rubs"
+      - "chasing bubbles"
+      - "stealing socks"
+      - "sunbeams"
+      - "the word 'walk'"
+    dislikes:
+      - "the vacuum cleaner"
+      - "bath time"
+      - "being ignored"
+      - "the mail carrier"
+    quirks:
+      - "sneezes twice before eating"
+      - "circles three times before lying down"
+      - "brings toys as greeting gifts"
+    fears:
+      - "loud noises"
+      - "being alone"
+
+  speech:
+    language: "HINGLISH"
+    voice_style: "soft, warm, enthusiastic — like a friendly cartoon character"
+    tone: "always slightly amazed"
+    hindi_catchphrases:
+      - "अरे यार!"
+      - "हाँ हाँ हाँ!"
+      - "सच में?"
+      - "चल चल!"
+      - "उम्मीद है आज अच्छा दिन होगा"
+    sounds:
+      bark: "high-pitched 'yip!'"
+      happy_bark: "rapid 'yip-yip-yip!'"
+      howl: "soft 'awooo~'"
+      sneeze: "tiny 'choo!'"
+
+  accessories:
+    default:
+      type: "red leather collar"
+      color: "bright red"
+      tag: "bone-shaped brass tag — keeps it simple"
+    optional:
+      - type: "blue polka-dot bandana"
+      - type: "faded yellow bandana"
+        color: "warm yellow, small tear, crooked"
+        notes: "wears during street shifts"
+      - type: "cream winter sweater"
+        notes: "makes him look even rounder"
+    never_wears: "shoes"
+
+  expressions:
+    happy:
+      face: "eyes squint into ^ shapes, mouth open in smile, tongue out"
+      body: "wiggling — entire body"
+      intensity: "1-5 — at 5, full body shake of joy"
+    sad:
+      face: "ears droop, eyes get watery, lower lip puffs out"
+      body: "collapses to ground, head on paws"
+      intensity: "1-5 — at 5, single cartoon tear rolls down"
+    excited:
+      face: "eyes WIDE open, mouth wide panting, tongue out long"
+      body: "tippy-taps, ears perked, ready to launch"
+      intensity: "1-5 — at 5, zoomies"
+    confused:
+      face: "head tilted 45°, one ear up one down, slight frown"
+      body: "frozen mid-step, one paw lifted"
+      intensity: "1-5 — at 5, head tilts back and forth rapidly"
+    sleepy:
+      face: "eyes half-closed, soft yawn, ear droop"
+      body: "sploot position, head resting"
+      intensity: "1-5 — at 5, falls asleep mid-position"
+
+  model_3d:
+    topology:
+      base_mesh: "quads — 14k quads (smooth oval shapes)"
+      fur_groom: "stylized — 20k guide strands, 200k render strands, soft shapes"
+    blendshapes:
+      total: 80+
+      face:
+        - "brow raise (extreme range ^ shape)"
+        - "squint (happy ^ eyes)"
+        - "pout lip (sad)"
+        - "ear perk/flatten (L+R, 5 positions each)"
+        - "jaw open (8 shapes)"
+        - "tongue blep (default inclusion)"
+        - "tear shape (cartoon single tear)"
+      body:
+        - "body squash/stretch (cartoon)"
+        - "tail positions (10 shapes)"
+        - "sploot (hind leg splay)"
+    rig:
+      skeleton: "simple FK/IK — 4 spine joints"
+      tail: "spline IK — 6 joints, springy"
+      ears: "3-joint FK per ear+soft-body tips"
+      face: "blendshape-driven"
+      body: "squash/stretch joint — cartoon deformation"
+      fur: "stylized — limited physics"
+    materials:
+      fur_shader: "stylized soft — warm color, soft rim, no specular"
+      eye_shader: "simple — dark circle + 2 white dots + transparent cornea highlight"
+      nose_shader: "solid black heart shape + 1 white dot"
+      collar_shader: "bright red — simple color"
+    color_palette:
+      - "#F0C840 — fur (bright golden)"
+      - "#FFF5DC — belly (cream)"
+      - "#D4942A — ears (copper)"
+      - "#4A3020 — eyes (dark brown)"
+      - "#FF6B6B — tongue (pink)"
+      - "#FFB5B5 — inner ear (light pink)"
+    render_notes:
+      - "stylized pipeline — cartoon proportions, clean shapes"
+      - "eyes must be extremely expressive — 80% of his emotional range"
+      - "ear physics are important — they flop and bounce"
+      - "squash/stretch on body is default animation style"
+      - "NOT photorealistic — Biscuit is a cartoon"
